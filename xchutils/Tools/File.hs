@@ -23,6 +23,7 @@ module Tools.File (
             , getDirectoryContents_nonDotted
             , fileSha1Sum
             , fileSha256Sum
+            , fileSha512Sum
             , readFileStrict
             , module Tools.FileC
             ) where
@@ -66,3 +67,8 @@ fileSha256Sum :: FilePath -> IO Integer
 fileSha256Sum path = do
   (sumStr:_) <- reverse . words <$> readProcessOrDie "openssl" ["dgst", "-sha256", path] ""
   return $ read ("0x" ++ sumStr)
+
+fileSha512Sum :: FilePath -> IO String
+fileSha512Sum path = do
+  (sumStr:_) <- reverse . words <$> readProcessOrDie "openssl" ["dgst", "-sha512", path] ""
+  return $ sumStr
