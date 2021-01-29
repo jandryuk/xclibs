@@ -1,3 +1,9 @@
-#editor side effects
+# OE
+oe-logs
+oe-workdir
+
+# Artefacts
+ghc-cc
+ghc-ld
+dist
 *~
-xclogging/*~
