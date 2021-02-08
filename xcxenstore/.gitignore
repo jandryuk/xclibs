@@ -26,7 +26,7 @@ autom4te.cache
 /depcomp
 /install-sh
 /missing
-/stamp-h1
+stamp-h1
 
 # https://www.gnu.org/software/libtool/
 
@@ -69,12 +69,11 @@ Makefile
 
 # Artefacts
 .libs/
-libxclogging-config.src
-libxclogging-config
-libxclogging.pc.src
-libxclogging.pc
-version.sed
+teststore
+libxcxenstore-config.src
+libxcxenstore-config
+libxcxenstore.pc.src
+libxcxenstore.pc
 config.h*
 INSTALL
-example/testlog
 tags

@@ -1,5 +1,10 @@
+# OE
+oe-logs
+oe-workdir
+
+# Artefacts
+/udbus-intro*.conf
 dist
 ghc-cc
 ghc-ld
 ld
-
