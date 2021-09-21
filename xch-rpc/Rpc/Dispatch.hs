@@ -33,6 +33,7 @@ module Rpc.Dispatch
        , hookSignalFrom
        , requestName
        , releaseName
+       , getConn
        ) where
 
 import Control.Concurrent
@@ -458,3 +459,6 @@ msgHello
             , callInterfaceT = fromString "org.freedesktop.DBus"
             , callMemberT = fromString "Hello"
             , callArgs = [ ] }
+
+getConn :: Dispatcher -> D.DBusContext
+getConn d = conn d
