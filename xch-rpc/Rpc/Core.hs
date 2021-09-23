@@ -66,6 +66,7 @@ module Rpc.Core
            , systemBus
            , sessionBus
            , connectBus
+           , getConn
            ) where
 
 import Prelude hiding (catch)
